@@ -73,6 +73,11 @@ swiper-slide img {
 }
 
 
+.display {
+	width: 70%;
+}
+
+
 .bar-padding {
 	padding: 5px 20px 5px 20px;
 }
@@ -129,7 +134,11 @@ main {
 	margin-bottom: 10px;
 }
 
-
+.food {
+	animation: opacity linear;
+	animation-timeline: view();
+	animation-range: cover;
+}
 .shop-info {
 	display: flex;
 }
@@ -163,6 +172,9 @@ main {
 	padding-top: 10px;
 	padding-bottom: 20px;
 	display: flex;
+	animation: opacity linear;
+	animation-timeline: view();
+	animation-range: cover;
 }
 .address h1 {
 	font-size: 14px;
@@ -193,7 +205,11 @@ main {
 }
 
 
-
+.shop-list-info {
+	animation: opacity-end linear;
+	animation-timeline: view();
+	animation-range: cover;
+}
 .shop-list p {
 	text-align: center;
 }
@@ -218,6 +234,18 @@ main {
 		display: none;
 	}
 }
+
+
+@keyframes opacity {
+	0%{opacity: 0;}
+	30%{opacity: 0;}
+	50%{opacity: 1;}
+}
+@keyframes opacity-end {
+	0%{opacity: 0;}
+	20%{opacity: 0;}
+	30%{opacity: 1;}
+}  
 
 
 .footer {

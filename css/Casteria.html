@@ -33,7 +33,7 @@
             </li>
           </ul>
           <form class="form-inline my-2 my-lg-0">
-            <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+            <input class="form-control display" type="search" placeholder="Search" aria-label="Search">
             <button class="btn btn-light my-2 my-sm-0" type="submit">Search</button>
           </form>
         </div>
@@ -78,10 +78,11 @@
                 slidesPerView: 2
               }
             },
+            speed: 1000,
             loop: true,
-            // autoplay: {
-            //     delay: 5000,
-            // },
+            autoplay: {
+              delay: 3000,
+            },
             scrollbar: true,
         };
     
@@ -154,27 +155,33 @@
         </div>
 
         <div class="img-info">
-          <p>Signature Food</p>
-          <div class="shop-info">
-            <img src="../img/food.jpg">
-            <div class="text-box">
-              サーモンは刺身やカルパッチョで食べるのが美味しいですが、リッチな気分になれるサーモンステーキがおすすめです。サーモンの美味しさを引き立てる2種のソースも絶品です！
+          <div class="food">
+            <p>Signature Food</p>
+            <div class="shop-info">
+              <img src="../img/food.jpg">
+              <div class="text-box">
+                サーモンは刺身やカルパッチョで食べるのが美味しいですが、リッチな気分になれるサーモンステーキがおすすめです。サーモンの美味しさを引き立てる2種のソースも絶品です！
+              </div>
             </div>
           </div>
 
-          <p>Our Coffee</p>
-          <div class="shop-info">
-            <img src="../img/barista.jpg">
-            <div class="text-box">
-              当店のコーヒー豆が厳選して世界中から買い付けています。そして、そのコーヒー豆のおいしさを最大限に引き出すために自社のロースタリーで焙煎しています。
+          <div class="food">
+            <p>Our Coffee</p>
+            <div class="shop-info">
+              <img src="../img/barista.jpg">
+              <div class="text-box">
+               当店のコーヒー豆が厳選して世界中から買い付けています。そして、そのコーヒー豆のおいしさを最大限に引き出すために自社のロースタリーで焙煎しています。
+              </div>
             </div>
           </div>
-
-          <p>Our Food</p>
-          <div class="shop-info">
-            <img src="../img/food3.jpg">
-            <div class="text-box">
-              当店は何よりまずは衛生営理に気をつけています。「安全・安心」をお届けするために日々継続的な努力を惜しみません。
+          
+          <div class="food">
+            <p>Our Food</p>
+            <div class="shop-info">
+              <img src="../img/food3.jpg">
+              <div class="text-box">
+                当店は何よりまずは衛生営理に気をつけています。「安全・安心」をお届けするために日々継続的な努力を惜しみません。
+              </div>
             </div>
           </div>
 
@@ -189,48 +196,53 @@
             <img src="../img/barista.jpg">
           </div>
           
-          <div class="shop-list">
-            <p>店舗一覧</p>
-          </div>
-          <div class="shop-list-img">
-            <div class="address-text">
-              <img src="../img/restaurant2.jpg">
-              <div class="map">
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
-                  <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
-                </svg>
-                <p>東京都渋谷区xxxxxx xxxxx</p>
-              </div>
-            </div> 
-            <div class="address-text">
-              <img src="../img/restaurant3.jpg">
-              <div class="map">
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
-                  <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
-                </svg>
-                <p>千葉県松戸市xxxxx xxxxx</p>
-              </div>
+          <div class="shop-list-info">
+            <div class="shop-list">
+              <p>店舗一覧</p>
             </div>
-            <div class="address-text">
-              <img src="../img/restaurant4.jpg">
-              <div class="map">
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
-                  <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
-                </svg>
-                <p>神奈川県横浜市xxxxxx xxxx</p>
-              </div>
-            </div>
-            <div class="address-text">
-              <img src="../img/restaurant5.jpg">
-              <div class="map">
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
-                  <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
-                </svg>
-                <p>埼玉県川越市xxxxxx xxxxx</p>
-              </div>
-            </div>
-          </div>
+            <div class="shop-list-img">
+              <div class="address-text">
+                <img src="../img/restaurant2.jpg">
+                <div class="map">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                    <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
+                  </svg>
+                  <p>東京都渋谷区xxxxxx xxxxx</p>
+                </div>
+              </div> 
 
+              <div class="address-text">
+                <img src="../img/restaurant3.jpg">
+                <div class="map">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                    <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
+                  </svg>
+                  <p>千葉県松戸市xxxxx xxxxx</p>
+                </div>
+              </div>
+
+              <div class="address-text">
+                <img src="../img/restaurant4.jpg">
+                <div class="map">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                    <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
+                  </svg>
+                  <p>神奈川県横浜市xxxxxx xxxx</p>
+                </div>
+              </div>
+
+              <div class="address-text">
+                <img src="../img/restaurant5.jpg">
+                <div class="map">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                    <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
+                  </svg>
+                  <p>埼玉県川越市xxxxxx xxxxx</p>
+                </div>
+              </div>
+
+            </div>
+          </div>
         </div>
 
     </main>
